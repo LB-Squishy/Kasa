@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/Kasa/static/js/main.2693f569.js",
+    "main.js": "/Kasa/static/js/main.fdbf54d6.js",
     "index.html": "/Kasa/index.html",
-    "main.2693f569.js.map": "/Kasa/static/js/main.2693f569.js.map"
+    "main.fdbf54d6.js.map": "/Kasa/static/js/main.fdbf54d6.js.map"
   },
   "entrypoints": [
-    "static/js/main.2693f569.js"
+    "static/js/main.fdbf54d6.js"
   ]
 }
