@@ -1,6 +1,6 @@
+import { Link } from "react-router-dom";
 import "./style.scss";
 import codeErrorLogo from "../../assets/404.svg";
-import { Link } from "react-router-dom";
 
 function NotFound() {
     return (

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
+import "./style.scss";
 import logoColor from "../../assets/LOGOcolor.svg";
 import logoWhite from "../../assets/LOGOwhite.svg";
-import "./style.scss";
 
 function Layout({ children }) {
     return (
