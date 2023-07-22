@@ -1,0 +1,13 @@
+@import "../../styles/utils/mixins.scss";
+@import "../../styles/utils/variables.scss";
+
+.collapse-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0;
+    @include touchpad {
+        gap: 30px;
+        margin: 38px 108.5px;
+    }
+}

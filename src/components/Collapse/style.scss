@@ -1,0 +1,62 @@
+@import "../../styles/utils/mixins.scss";
+@import "../../styles/utils/variables.scss";
+
+.collapse {
+    cursor: pointer;
+    &__title {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $primary;
+        border-radius: 10px;
+        padding: 10px;
+        color: $white;
+        font-size: 13px;
+        @include touchpad {
+            font-size: 18px;
+        }
+        @include desktop {
+            font-size: 24px;
+        }
+    }
+    &__icon {
+        i {
+            font-size: 13px;
+            transition: 0.2s ease-in-out;
+            @include touchpad {
+                font-size: 18px;
+            }
+            @include desktop {
+                font-size: 24px;
+            }
+        }
+    }
+    &.active &__icon {
+        i {
+            transform: rotate(-180deg);
+        }
+    }
+    &__description {
+        overflow: hidden;
+        position: relative;
+        z-index: -1;
+        background-color: $grey;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        color: $primary;
+        font-size: 12px;
+        font-weight: 400;
+        max-height: 0;
+        padding: 0 20px;
+        transform: translateY(-10px);
+        transition: 0.2s ease-in-out;
+        @include touchpad {
+            font-size: 18px;
+        }
+    }
+    &.active &__description {
+        padding: 30px 20px 20px 20px;
+        max-height: 10em;
+    }
+}
