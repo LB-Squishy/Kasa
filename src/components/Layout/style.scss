@@ -13,7 +13,11 @@
     padding: 20px;
     @include desktop {
         height: 68px;
-        padding: 45px 100px;
+        padding: 45px 20px;
+    }
+    @include desktop-L {
+        max-width: 1440px;
+        margin: 0 auto;
     }
     &__logo {
         height: 100%;
@@ -43,8 +47,10 @@
 
 .main-container {
     margin: 0 20px;
-    @include desktop {
-        margin: 0 100px;
+    @include desktop-L {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 20px;
     }
 }
 

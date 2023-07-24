@@ -1,5 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import logementsData from "../../data/logements.json";
+import Slider from "../../components/Slider";
 import "./style.scss";
 
 function Logement() {
@@ -14,6 +15,7 @@ function Logement() {
     }
     return (
         <div>
+            <Slider images={logement.pictures} />
             <h1>{logement.title}</h1>
         </div>
     );
