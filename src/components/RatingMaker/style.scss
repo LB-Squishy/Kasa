@@ -1,0 +1,14 @@
+@import "../../styles/utils/mixins.scss";
+@import "../../styles/utils/variables.scss";
+
+.rating-container {
+    display: flex;
+    gap: 6px;
+    width: 100%;
+    font-size: 13px;
+    @include touchpad {
+        justify-content: flex-end;
+        gap: 15px;
+        font-size: 24px;
+    }
+}

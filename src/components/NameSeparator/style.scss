@@ -1,0 +1,12 @@
+@import "../../styles/utils/mixins.scss";
+@import "../../styles/utils/variables.scss";
+
+.name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 12px;
+    @include touchpad {
+        font-size: 18px;
+    }
+}

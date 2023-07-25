@@ -2,6 +2,7 @@
 @import "../../styles/utils/variables.scss";
 
 .collapse {
+    width: 100%;
     cursor: pointer;
     &__title {
         display: flex;

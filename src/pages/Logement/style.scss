@@ -1,2 +1,117 @@
 @import "../../styles/utils/mixins.scss";
 @import "../../styles/utils/variables.scss";
+
+.logement-infos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 15px;
+    @include touchpad {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+}
+
+.logement-first-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: $primary;
+    &__title {
+        font-size: 18px;
+        @include touchpad {
+            font-size: 36px;
+        }
+    }
+    &__location {
+        font-size: 14px;
+        @include touchpad {
+            font-size: 18px;
+        }
+    }
+    &__tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        @include touchpad {
+            margin-top: 10px;
+        }
+        &--style {
+            display: flex;
+            align-items: center;
+            background-color: $primary;
+            height: 18px;
+            border-radius: 6px;
+            color: $white;
+            font-size: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        @include touchpad {
+            height: 25px;
+            font-size: 14px;
+        }
+    }
+}
+
+.logement-second-infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $primary;
+    @include touchpad {
+        flex-direction: column-reverse;
+    }
+    &__rating {
+        display: flex;
+        gap: 6px;
+        width: 100%;
+        font-size: 13px;
+        @include touchpad {
+            justify-content: flex-end;
+            gap: 15px;
+            font-size: 24px;
+        }
+        &--uncheck {
+            color: $greyStars;
+        }
+    }
+    &__owner {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        height: 32px;
+        @include touchpad {
+            height: 64px;
+        }
+        &--photo {
+            display: flex;
+            width: 32px;
+            height: 32px;
+            border-radius: 16px;
+            @include touchpad {
+                width: 64px;
+                height: 64px;
+                border-radius: 32px;
+            }
+        }
+    }
+}
+
+.logement-infos-collapse {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 13px 0 27px 0;
+    @include touchpad {
+        flex-direction: row;
+        gap: 75px;
+        margin: 25px 0 50px 0;
+    }
+    &__equipements {
+        &--style {
+            font-weight: 400;
+        }
+    }
+}
