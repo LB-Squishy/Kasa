@@ -1,22 +1,22 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
-import NotFound from "./components/404";
 import Homepage from "./pages/Homepage";
 import Logement from "./pages/Logement";
 import About from "./pages/About";
+import NotFound from "./components/404";
 
 function Router() {
     return (
         <HashRouter>
             <Layout>
                 <Routes>
-                    <Route path="/Homepage" element={<Homepage />} />
+                    <Route path="/homepage" element={<Homepage />} />
                     <Route
-                        path="/Fiche-Logement/:logementId"
+                        path="/fiche-logement/:logementId"
                         element={<Logement />}
                     />
-                    <Route path="/A-Propos" element={<About />} />
-                    <Route path="/NotFound" element={<NotFound />} />
+                    <Route path="/a-propos" element={<About />} />
+                    <Route path="/not-found" element={<NotFound />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </Layout>

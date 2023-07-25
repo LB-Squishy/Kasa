@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import "./style.scss";
 import logoColor from "../../assets/LOGOcolor.svg";
 import logoWhite from "../../assets/LOGOwhite.svg";
+import "./style.scss";
 
 function Layout({ children }) {
     return (
@@ -14,13 +14,13 @@ function Layout({ children }) {
                 />
                 <nav className="header-container__nav">
                     <Link
-                        to="/Homepage"
+                        to="/homepage"
                         className="header-container__nav--underline"
                     >
                         Accueil
                     </Link>
                     <Link
-                        to="/A-Propos"
+                        to="/a-propos"
                         className="header-container__nav--underline"
                     >
                         A Propos

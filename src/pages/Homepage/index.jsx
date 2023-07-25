@@ -1,8 +1,8 @@
 import logementsData from "../../data/logements.json";
-import "./style.scss";
 import Banner from "../../components/Banner";
 import HomePageBanner from "../../assets/homepage-banner.png";
 import Card from "../../components/Card";
+import "./style.scss";
 
 function Homepage() {
     return (

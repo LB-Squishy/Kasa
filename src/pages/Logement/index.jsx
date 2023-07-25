@@ -13,7 +13,7 @@ function Logement() {
     );
     const navigate = useNavigate();
     if (!logement) {
-        navigate("/NotFound");
+        navigate("/not-found");
         return null;
     }
     return (
@@ -41,9 +41,9 @@ function Logement() {
                 <div className="logement-second-infos">
                     <RatingMaker
                         className="logement-second-infos__rating"
-                        check={<i class="fa-solid fa-star"></i>}
+                        check={<i className="fa-solid fa-star"></i>}
                         uncheck={
-                            <i class="fa-solid fa-star logement-second-infos__rating--uncheck"></i>
+                            <i className="fa-solid fa-star logement-second-infos__rating--uncheck"></i>
                         }
                         rating={logement.rating}
                         maxRate={5}

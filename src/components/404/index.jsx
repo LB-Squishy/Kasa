@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import "./style.scss";
 import codeErrorLogo from "../../assets/404.svg";
+import "./style.scss";
 
 function NotFound() {
     return (
@@ -13,7 +13,7 @@ function NotFound() {
             <p className="notfound-container__texte">
                 Oups! La page que vous demandez n'existe pas.
             </p>
-            <Link to="/Homepage" className="notfound-container__link">
+            <Link to="/homepage" className="notfound-container__link">
                 Retourner sur la page d'accueil
             </Link>
         </div>

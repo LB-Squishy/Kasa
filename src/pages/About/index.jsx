@@ -1,8 +1,8 @@
 import aboutData from "../../data/about.json";
-import "./style.scss";
 import Banner from "../../components/Banner";
 import AboutBanner from "../../assets/about-banner.png";
 import Collapse from "../../components/Collapse";
+import "./style.scss";
 
 function About() {
     return (

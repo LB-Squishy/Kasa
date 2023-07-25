@@ -3,7 +3,7 @@ import "./style.scss";
 
 function Card({ title, cover, logementId }) {
     return (
-        <Link to={`/Fiche-Logement/${logementId}`}>
+        <Link to={`/fiche-logement/${logementId}`}>
             <div className="card">
                 <div className="card__img">
                     <img className="card__img--cover" src={cover} alt={title} />
