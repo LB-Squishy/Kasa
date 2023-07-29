@@ -16,8 +16,8 @@ function Slider({ images }) {
     };
 
     return (
-        <div className="slider">
-            <div className="slider__image">
+        <div className="slider-component">
+            <div className="slider-component__image">
                 {images.map((image, index) => (
                     <img
                         className={index === currentSlide ? "active" : ""}
@@ -28,16 +28,16 @@ function Slider({ images }) {
                 ))}
             </div>
             {images.length > 1 && (
-                <div className="slider__overlay">
+                <div className="slider-component__overlay">
                     <i
-                        className="slider__overlay--arrowLeft fa-solid fa-chevron-left"
+                        className="slider-component__overlay--arrowLeft fa-solid fa-chevron-left"
                         onClick={handlePrev}
                     ></i>
-                    <div className="slider__overlay--number">{`${
+                    <div className="slider-component__overlay--number">{`${
                         currentSlide + 1
                     }/${images.length}`}</div>
                     <i
-                        className="slider__overlay--arrowRight fa-solid fa-chevron-right"
+                        className="slider-component__overlay--arrowRight fa-solid fa-chevron-right"
                         onClick={handleNext}
                     ></i>
                 </div>

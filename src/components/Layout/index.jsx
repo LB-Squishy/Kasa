@@ -5,7 +5,7 @@ import "./style.scss";
 
 function Layout({ children }) {
     return (
-        <div className="layout-container">
+        <div className="layout-component">
             <header className="header-container">
                 <img
                     className="header-container__logo"

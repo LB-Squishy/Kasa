@@ -1,20 +1,19 @@
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import logementsData from "../../data/logements.json";
 import Slider from "../../components/Slider";
 import NameSeprator from "../../components/NameSeparator";
 import RatingMaker from "../../components/RatingMaker";
 import Collapse from "../../components/Collapse";
 import "./style.scss";
+import NotFound from "../../components/404";
 
 function Logement() {
     const { logementId } = useParams();
     const logement = logementsData.find(
         (logement) => logement.id === logementId
     );
-    const navigate = useNavigate();
     if (!logement) {
-        navigate("/not-found");
-        return null;
+        return <NotFound />;
     }
     return (
         <div>

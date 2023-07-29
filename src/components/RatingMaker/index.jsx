@@ -5,7 +5,7 @@ function RatingMaker({ check, uncheck, rating, maxRate }) {
     for (let index = 1; index <= maxRate; index++) {
         icones.push(<div key={index}>{index <= rating ? check : uncheck}</div>);
     }
-    return <div className="rating-container">{icones}</div>;
+    return <div className="rating-component">{icones}</div>;
 }
 
 export default RatingMaker;

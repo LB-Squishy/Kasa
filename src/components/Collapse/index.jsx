@@ -6,16 +6,16 @@ function Collapse({ title, description }) {
 
     return (
         <div
-            className={`collapse ${active ? `active` : ``}`}
+            className={`collapse-component ${active ? `active` : ``}`}
             onClick={() => setActive(!active)}
         >
-            <div className="collapse__title">
+            <div className="collapse-component__title">
                 <span>{title}</span>
-                <div className="collapse__icon">
+                <div className="collapse-component__icon">
                     <i className="fa-solid fa-chevron-up"></i>
                 </div>
             </div>
-            <div className="collapse__description">{description}</div>
+            <div className="collapse-component__description">{description}</div>
         </div>
     );
 }

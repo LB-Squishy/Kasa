@@ -4,16 +4,16 @@ import "./style.scss";
 
 function NotFound() {
     return (
-        <div className="notfound-container">
+        <div className="notfound-component">
             <img
-                className="notfound-container__logo"
+                className="notfound-component__logo"
                 src={codeErrorLogo}
                 alt="Logo 404"
             />
-            <p className="notfound-container__texte">
+            <p className="notfound-component__texte">
                 Oups! La page que vous demandez n'existe pas.
             </p>
-            <Link to="/homepage" className="notfound-container__link">
+            <Link to="/homepage" className="notfound-component__link">
                 Retourner sur la page d'accueil
             </Link>
         </div>
