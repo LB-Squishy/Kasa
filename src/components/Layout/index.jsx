@@ -3,6 +3,13 @@ import logoColor from "../../assets/LOGOcolor.svg";
 import logoWhite from "../../assets/LOGOwhite.svg";
 import "./style.scss";
 
+/**
+ * Créer un Layout composé d'un entête, d'un main et d'un pied de page
+ *
+ * children permet d'insérer les Routes des pages dans la balise <main>
+ *
+ */
+
 function Layout({ children }) {
     return (
         <div className="layout-component">

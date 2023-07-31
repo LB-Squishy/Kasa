@@ -2,6 +2,13 @@ import { Link } from "react-router-dom";
 import codeErrorLogo from "../../assets/404.svg";
 import "./style.scss";
 
+/**
+ * Ce composant génére le contenu de la page 404
+ *
+ * Link permet un retour à la Homepage
+ *
+ */
+
 function NotFound() {
     return (
         <div className="notfound-component">

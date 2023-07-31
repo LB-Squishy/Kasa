@@ -1,6 +1,21 @@
 import { useState } from "react";
 import "./style.scss";
 
+/**
+ * Créer un carrousel
+ *
+ * @param {string} images - correspond aux images à intégrer au Slider
+ * @returns {composant} - Carrousel
+ *
+ * useState gère l'état du carrousel
+ * useState: initialise l'etat à 0 (index de l'image courante)
+ * currentSlide: représente la slide actuelle
+ * setCurrentSlide: au clic change l'index
+ *
+ * La condition ternaire gère le retour à l'image de départ
+ * ou l'envoi à l'image de fin dans les handles en fonction de l'index et de length
+ */
+
 function Slider({ images }) {
     const [currentSlide, setCurrentSlide] = useState(0);
 
