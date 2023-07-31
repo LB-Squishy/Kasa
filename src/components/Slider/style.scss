@@ -8,8 +8,8 @@
     overflow: hidden;
     border-radius: 10px;
     &:hover {
-        .slider__overlay--arrowLeft,
-        .slider__overlay--arrowRight {
+        .slider-component__overlay--arrowLeft,
+        .slider-component__overlay--arrowRight {
             transform: scale(1.1);
             background-color: rgba(0, 0, 0, 0.2);
         }
