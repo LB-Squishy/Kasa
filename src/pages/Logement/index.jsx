@@ -8,32 +8,25 @@ import "./style.scss";
 import NotFound from "../../components/404";
 
 /**
- * Ce composant créer une fiche détaillée sur un logement spécifique
- * pour le contenu de la page Logement
- *
- * Il récupère logementId depuis l'URL
- * Puis récupère le bon logement dans logementsData en fonction de l'id
- *
- * Si le logement n'est pas trouvé il affiche le composants NotFound
- * Sinon il génére la fiche du logement
- *
- * Slider: génère le carroussel
- * RatingMaker: génère les étoiles
- * NameSeparator: permet de séparer le nom du prénom après récupération dans la Data
- * Collapse: génère les collapses du logement
+ * Ce composant créer une fiche détaillée sur un logement spécifique pour le contenu de la page Logement
  */
 
 function Logement() {
+    /*
+     * Il récupère logementId depuis l'URL
+     * Puis récupère le bon logement dans logementsData en fonction de l'id
+     */
     const { logementId } = useParams();
-
     const logement = logementsData.find(
         (logement) => logement.id === logementId
     );
-
+    /*
+     * Si le logement n'est pas trouvé il affiche le composants NotFound
+     * Sinon il génére la fiche du logement
+     */
     if (!logement) {
         return <NotFound />;
     }
-
     return (
         <div>
             <Slider images={logement.pictures} />

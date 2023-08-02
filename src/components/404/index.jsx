@@ -4,9 +4,6 @@ import "./style.scss";
 
 /**
  * Ce composant génére le contenu de la page 404
- *
- * Link permet un retour à la Homepage
- *
  */
 
 function NotFound() {

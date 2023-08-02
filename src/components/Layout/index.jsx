@@ -6,8 +6,7 @@ import "./style.scss";
 /**
  * Créer un Layout composé d'un entête, d'un main et d'un pied de page
  *
- * children permet d'insérer les Routes des pages dans la balise <main>
- *
+ * @param {ReactElement} children - permet d'insérer les Routes des pages dans la balise <main>
  */
 
 function Layout({ children }) {

@@ -3,10 +3,9 @@ import "./style.scss";
 /**
  * Créer une bannière
  *
- * @param {string} image - Source de l'image
- * @param {string} texte - Texte qui sera intégré en superposition
- * @returns {composant} - Bannière
- *
+ * @param {String} image - Source de l'image
+ * @param {String} texte - Texte qui sera intégré en superposition
+ * @returns {ReactElement} - Bannière
  */
 
 function Banner({ image, texte }) {

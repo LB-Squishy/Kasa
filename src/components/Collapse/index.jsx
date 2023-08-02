@@ -4,18 +4,18 @@ import "./style.scss";
 /**
  * Créer une Collpase
  *
- * @param {string} title - Titre de la collapse
- * @param {string} description - Contenu de la collapse
- * @returns {composant} - Collapse
- *
- * useState gère l'état de la collapse
- * useState: initialise l'etat à false (replié)
- * state: représente l'état actuel de la collapse
- * setState: au clic inverse l'état
- *
+ * @param {String} title - Titre de la collapse
+ * @param {String} description - Contenu de la collapse
+ * @returns {ReactElement} - Collapse
  */
 
 function Collapse({ title, description }) {
+    /**
+     * useState gère l'état de la collapse
+     * useState: initialise l'etat à false (replié)
+     * state: représente l'état actuel de la collapse
+     * setState: au clic inverse l'état
+     */
     const [state, setState] = useState(false);
     return (
         <div

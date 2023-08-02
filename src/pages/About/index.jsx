@@ -9,7 +9,6 @@ import "./style.scss";
  *
  * Il génère une bannière avec le composant Banner
  * Puis créer une série de Collapse à partir de aboutData
- *
  */
 
 function About() {
